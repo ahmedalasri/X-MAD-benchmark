@@ -18,13 +18,12 @@ The X-MAD dataset is available on Zenodo:
 
 The dataset contains:
 
-- 5,595 de-identified JPG radiographic images
-- Multi-anatomy plain X-ray images
+* 5,595 de-identified JPG radiographic images
+* Multi-anatomy plain X-ray images
 
-The dataset is released under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
+The dataset is released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
 ---
-
 
 ## Benchmark Overview
 
@@ -45,37 +44,34 @@ The benchmark pipeline includes:
 
 ## Baseline Configuration
 
-| Component | Setting |
-|---|---|
-| Input size | `224 × 224` |
-| Image format | Three-channel grayscale |
-| Patch size | `16 × 16` |
-| Number of patches | `196` |
-| Mask ratio | `0.75` |
-| Train/validation split | `80/20` |
-| Batch size | `32` |
-| Epochs | `30` |
-| Optimizer | AdamW |
-| Learning rate | `1e-4` |
-| Weight decay | `0.05` |
-| Scheduler | Cosine annealing |
+| Component              | Setting                 |
+| ---------------------- | ----------------------- |
+| Input size             | `224 × 224`             |
+| Image format           | Three-channel grayscale |
+| Patch size             | `16 × 16`               |
+| Number of patches      | `196`                   |
+| Mask ratio             | `0.75`                  |
+| Train/validation split | `80/20`                 |
+| Batch size             | `32`                    |
+| Epochs                 | `30`                    |
+| Optimizer              | AdamW                   |
+| Learning rate          | `1e-4`                  |
+| Weight decay           | `0.05`                  |
+| Scheduler              | Cosine annealing        |
 
 ---
-
-
 
 ## Running the Benchmark
 
 ### 1. Train the self-supervised model
 
-Run the notebook or training script:
-
+Run the notebook:
 
 ```text
 notebooks/X-MAD.ipynb
 ```
 
-
+---
 
 ## Outputs
 
@@ -94,14 +90,18 @@ outputs/
 
 ---
 
-
-
 ## Citation
 
 If you use this code or the X-MAD dataset, please cite the dataset and paper:
 
 ```bibtex
-
+@dataset{xmad2026,
+  title     = {X-MAD: A Public Multi-Anatomy X-ray Dataset for Self-Supervised Learning in Low-Resource Radiographic Imaging},
+  author    = {Alasri, Ahmed and Cai, Zhihua and Noman, Abdulrahman and Sharha, Kamal and Alroobaea, Roobaea and Elrashidi, Ali},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.20125279}
+}
 ```
 
 Dataset DOI:
@@ -116,7 +116,7 @@ Dataset DOI:
 
 The benchmark code is released for research use. Please check the repository license file for the exact software license.
 
-The X-MAD dataset images are released separately under **CC BY-NC 4.0**, which permits sharing and adaptation for non-commercial purposes only with appropriate attribution.
+The X-MAD dataset images are released separately under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**, which permits sharing and adaptation with appropriate attribution.
 
 ---
 
@@ -135,4 +135,4 @@ ORCID: https://orcid.org/0009-0000-3133-8782
 
 ## Disclaimer
 
-The X-MAD dataset and benchmark code are provided for research and educational purposes only. They are not intended for clinical diagnosis, clinical decision-making, treatment planning, or direct patient care. Users are responsible for ensuring that their use of the dataset and code complies with applicable ethical, legal, institutional, and regulatory requirements.
+The X-MAD dataset and benchmark code are provided for research and educational purposes. They are not intended for clinical diagnosis, clinical decision-making, treatment planning, or direct patient care. Users are responsible for ensuring that their use of the dataset and code complies with applicable ethical, legal, institutional, and regulatory requirements.
