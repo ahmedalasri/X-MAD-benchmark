@@ -115,7 +115,6 @@ The author list above reflects the current manuscript draft. Please confirm all 
 }
 ```
 
-Replace this citation once the journal publishes the article and issues a final DOI.
 
 ## Licenses and permissions
 
